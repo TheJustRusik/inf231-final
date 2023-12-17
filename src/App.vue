@@ -1,47 +1,20 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+    import Icon from './components/Icon.vue'
+    import Button from './components/Button.vue'
+    import Box from './components/Box.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <div class="flex justify-center">
+        <Box>
+            <Icon icontype='1' w='10' h='10'/>
+            <p class="text-5xl font-extrabold m-2">Tree forse smth</p>
+            <p class="m-2 text-xl font-semibold">Bla bla bla text</p>
+        </Box>
+        <Box>
+            <Button msg="Hellow"><img src="./assets/icons/home-svgrepo-com.svg" alt="" class="w-6"></Button>
+            <Button msg="Lalka"></Button>
+        </Box>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
