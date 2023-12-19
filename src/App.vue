@@ -1,7 +1,7 @@
 <script setup>
-    import Test from './components/RadioButton.vue';
+    import Test from './components/ToggleSwitch.vue';
 </script>
 
 <template>  
-    <Test :radioGroupName="'2'" :options="[{value:1,text:'1'},{value:2,text:'2'},{value:1,text:'1'}]"></Test>
+    <Test switchId="1" :modelValue="true"></Test>
 </template>
