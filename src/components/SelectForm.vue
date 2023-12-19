@@ -6,7 +6,7 @@
       options:{
         type: Array,
         required: true,
-        default: () => [{val:1,txt:"Option 1"},{val:2,txt:"Option 2"}]
+        default: () => [{val:1,txt:"Option 1"},{val:2,txt:"Option 2"},{val:3,txt:"Option 3"}]
         
       }
     },

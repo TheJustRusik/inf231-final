@@ -19,5 +19,10 @@
 </script>
 
 <template>
-    <input :type="type"> 
+    <div class="flex">
+        <div class="">
+            <input :type="type" class="border-blue-300 border-2 rounded-xl"> 
+        </div>
+    </div>
+    
 </template>

@@ -1,8 +1,8 @@
 <script setup>
-    import Test from './components/SelectForm.vue';
+    import Test from './components/CheckBox.vue';
 </script>
 
 <template>    
-    <Test :options="[{val:1, txt:'G'}, {val: 1, txt:'f'}]"></Test>
-    
+    <Test :checkboxId="'1'" :modelValue="true"></Test>
+    <Test :checkboxId="'2'" :label="'Hello'"></Test>
 </template>
