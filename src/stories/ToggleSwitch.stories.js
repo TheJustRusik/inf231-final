@@ -1,7 +1,7 @@
 import MyToggleSwitch from '../components/ToggleSwitch.vue';
 
 export default{
-    title: 'ToggleSwitch',
+    title: 'Input/ToggleSwitch',
     component: MyToggleSwitch,
     tags: ["autodocs"]
 }   

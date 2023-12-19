@@ -1,7 +1,7 @@
 import MyCheckBox from '../components/CheckBox.vue'
 
 export default{
-    title: 'CheckBox',
+    title: 'Input/CheckBox',
     component: MyCheckBox,
     tags: ["autodocs"],
     

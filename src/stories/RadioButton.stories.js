@@ -1,7 +1,7 @@
 import MyRadioButton from '../components/RadioButton.vue';
 
 export default{
-    title: 'RadioButton',
+    title: 'Input/RadioButton',
     component: MyRadioButton,
     tags: ["autodocs"],
     

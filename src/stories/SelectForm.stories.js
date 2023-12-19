@@ -1,7 +1,7 @@
 import MySelectForm from '../components/SelectForm.vue'
 
 export default{
-    title: 'SelectForm',
+    title: 'Input/SelectForm',
     component: MySelectForm,
     tags: ["autodocs"],
     

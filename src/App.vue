@@ -1,7 +1,7 @@
 <script setup>
-    import Test from './components/ToggleSwitch.vue';
+    import Test from './components/Button.vue';
 </script>
 
 <template>  
-    <Test switchId="1" :modelValue="true"></Test>
+    <Test buttonText="Lol" :isDropdown="true" :options="[1,2,3]"></Test>
 </template>

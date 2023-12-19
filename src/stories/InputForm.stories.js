@@ -1,7 +1,7 @@
 import MyInputForm from '../components/InputForm.vue';
 
 export default{
-    title: 'InputForm',
+    title: 'Input/InputForm',
     component: MyInputForm,
     tags: ["autodocs"],
     argTypes: {
