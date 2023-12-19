@@ -1,16 +1,8 @@
 <script setup>
-    import Icon from './components/Icon.vue'
-    import Button from './components/Button.vue'
-    import Box from './components/Box.vue'
-    import StoryButton from "./stories/Button.vue"
-
+    import Test from './components/SelectForm.vue';
 </script>
 
-<template>
-    
-    <StoryButton label="Hello" primary="true" size="large"></StoryButton>
-        
-
-   
+<template>    
+    <Test :options="[{val:1, txt:'G'}, {val: 1, txt:'f'}]"></Test>
     
 </template>
