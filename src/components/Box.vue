@@ -3,10 +3,10 @@
 </script>
 
 <template>
-    <button>    
-        <div class="p-2 m-2 bg-white rounded-xl shadow-xl">
-            <slot></slot>
-        </div>
-    </button>
+       
+    <div class="flex items-center p-2 m-2 bg-white rounded-xl shadow-xl">
+        <slot></slot>
+    </div>
+    
 
 </template>
