@@ -1,8 +1,7 @@
 <script setup>
-    import Test from './components/CheckBox.vue';
+    import Test from './components/RadioButton.vue';
 </script>
 
-<template>    
-    <Test :checkboxId="'1'" :modelValue="true"></Test>
-    <Test :checkboxId="'2'" :label="'Hello'"></Test>
+<template>  
+    <Test :radioGroupName="'2'" :options="[{value:1,text:'1'},{value:2,text:'2'},{value:1,text:'1'}]"></Test>
 </template>
