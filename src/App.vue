@@ -1,7 +1,7 @@
 <script setup>
-    import Test from './components/Button.vue';
+    import Test from './components/InputGroup.vue';
 </script>
 
 <template>  
-    <Test buttonText="Lol" :isDropdown="true" :options="[1,2,3]"></Test>
+    <Test ></Test>
 </template>
