@@ -1,8 +1,7 @@
 <script setup>
-    import Test from './components/Accordion.vue';
+    import ModalWindow from './components/ModalWindow.vue';
 </script>
 
 <template>  
-    <Test :items="[{header:'Title 1',content:'Content 1'},{header:'Title 2',content:'Content 2'}]"> </Test>
-    
+    <font-awesome-icon icon="search" />
 </template>
