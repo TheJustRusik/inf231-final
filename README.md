@@ -27,3 +27,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Run storybook
+
+```sh
+npm run storybook
+```
