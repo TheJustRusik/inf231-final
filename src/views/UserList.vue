@@ -53,7 +53,26 @@
                 </div>
                 
             </div>
-            <Table class="w-fill" :headers="['USER','ROLE','PLAN','BILLING','STATUS','ACTIONS']" :data="tableData"></Table>
+            <Table :cols="['USER','ROLE','PLAN','BILLING','STATUS','ACTIONS']">
+                <!--User-->
+                <div class="px-6 flex">
+                    <img src="../assets/images/avatar.png" alt="" class="w-[40px] h-[40px] rounded-full">
+                    <div>
+                        <p class="">Zsazsa McCleverty</p>
+                        <p>zmcclevertye@soundcloud.com</p>
+                    </div>
+                </div>
+                <!--Role-->
+                <div class="px-6 flex">p</div>
+                <!--Plan-->
+                <div class="px-6 flex">d</div>
+                <!--Billing-->
+                <div class="px-6 flex">s</div>
+                <!--Status-->
+                <div class="px-6 flex">xz</div>
+                <!--Actions-->
+                <div class="px-6 flex">v</div>
+            </Table>
         </div>
     </div>
 </template>
