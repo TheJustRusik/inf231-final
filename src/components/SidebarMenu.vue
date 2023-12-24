@@ -1,7 +1,7 @@
 <template>
   <div class="fixed h-screen ">
     <div 
-      class="sidebar-container h-full text-black fixed bg-white w-[14%] px-4 shadow-lg" 
+      class="sidebar-container h-full text-black fixed bg-white w-[17%] px-4 shadow-lg" 
     >
       <div class="flex items-center w-9 mt-5 ml-3 mb-4">
         <img src="../assets/icons/logo.svg" alt="" class="mr-3">

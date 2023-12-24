@@ -8,6 +8,7 @@
     import SearchBar from './components/SearchBar.vue';
     import Collapse from './components/Collapse.vue';
     import Button from './components/Button.vue';
+    import Footer from './components/PageFooter.vue'
     import { icon } from '@fortawesome/fontawesome-svg-core';
 
 
@@ -78,6 +79,7 @@
             
             
             <RouterView/>
+            <Footer></Footer>
         </div>
     </div>
 </template>

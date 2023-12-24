@@ -10,7 +10,7 @@
           <i class="fa-solid fa-sun text-2xl text-gray-600  mr-4"></i>
           <i class="fa-solid fa-grip text-2xl text-gray-600 mr-4 "></i>
           <i class="fa-solid fa-bell text-2xl text-gray-600 mr-4 "></i>
-          <img src="../assets/images/avatar.png" alt="" class="w-[38px] rounded-full">
+          <img src="../assets/images/1.png" alt="" class="w-[38px] rounded-full">
         </div>
       </div>
     </div>

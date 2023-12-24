@@ -1,7 +1,12 @@
 <template>
-    <footer class="page-footer">
-      <slot></slot> <!-- Для кастомного содержимого -->
-      <p v-if="copyright">{{ copyright }}</p>
+    <footer class="flex justify-between text-[#5d596c]">
+      <p >© 2023, made with ❤️ by <a href="https://github.com/TheJustRusik" class="text-[#7367f0]">TheJustRusik</a></p>
+      <div class="flex gap-6">
+        <button>License</button>
+        <button>More Themes</button>
+        <button>Documentation</button>
+        <button>Support</button>
+      </div>
     </footer>
 </template>
   
@@ -12,14 +17,4 @@
     }
   };
 </script>
-  
-<style>
-  .page-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #eee;
-    margin-top: 20px;
-  }
-  
-</style>
   

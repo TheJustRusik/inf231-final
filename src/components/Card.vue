@@ -1,48 +1,26 @@
 <template>
-    <div class="card">
-      <div v-if="title" class="card-header">
-        {{ title }}
+  <div class="bg-white shadow-lg rounded-lg">
+    <div class="my-4 mx-6">
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-lg text-[#5d596c]">{{ title }}</p>
+          <p class="text-sm text-gray-500">{{ subtitle }}</p>
+        </div>
+        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+        
       </div>
-      <div class="card-body">
-        <slot></slot>
-      </div>
-      <div v-if="showActions" class="card-actions">
-        <slot name="actions"></slot>
-      </div>
+      <slot></slot>
     </div>
+  </div>
 </template>
   
 <script>
   export default {
     props: {
       title: String,
-      showActions: {
-        type: Boolean,
-        default: false
-      }
+      subtitle: String,
     }
   };
 </script>
-  
-<style>
-  .card {
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      padding: 20px;
-      margin: 10px;
-  }
-  
-  .card-header {
-      font-size: 1.25em;
-      margin-bottom: 20px;
-  }
-  
-  .card-body {
-      margin-bottom: 20px;
-  }
-  
-  .card-actions {
-      text-align: right;
-  }
-</style>
+ 
   
