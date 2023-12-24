@@ -1,104 +1,37 @@
 <template>
-    <div class="sidebar-container" :class="{ 'is-open': isOpen }">
-      <button class="toggle-button" :class="{ 'is-open': isOpen}" @click="toggleSidebar">☰</button>
-      <div class="sidebar">
-        <ul class="menu-list">
-          <li v-for="item in menuItems" :key="item.name" class="menu-item">
-            <a @click="selectItem(item.name)">
-              <i :class="item.icon"></i>
-              <span>{{ item.name }}</span>
-            </a>
-          </li>
-        </ul>
+  <div class="fixed h-screen ">
+    <div 
+      class="sidebar-container h-full text-black fixed bg-white w-[14%] px-4 shadow-lg" 
+    >
+      <div class="flex items-center w-9 mt-5 ml-3 mb-4">
+        <img src="../assets/icons/logo.svg" alt="" class="mr-3">
+        <p class="text-2xl font-bold text-[#5d596c]">Vuexy</p>
       </div>
+      <slot></slot>
     </div>
+  </div>
 </template>
   
 <script>
+//6
+//17
   export default {
-    props: {
-      menuItems: {
-        type: Array,
-        required: true
-      }
-    },
-    data() {
-      return {
-        isOpen: false
-      };
-    },
-    methods: {
-      toggleSidebar() {
-        this.isOpen = !this.isOpen;
-      },
-      selectItem(itemName) {
-        // Handle item selection
-      }
-    }
+    
   };
 </script>
-  
 <style>
-  .sidebar-container {
-    position: relative;
-  }
-  
-  .toggle-button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    transition: left 0.3s;
-  }
-  .toggle-button.is-open{
-    left: 250px;
-  }
+.sidebar-container {
+    height: 100%; /* или конкретная высота в пикселях */
+    overflow-y: auto;
+}
 
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    overflow-x: hidden;
-    transition: left 0.3s;
-    z-index: 999;
-  }
-  
-  .sidebar-container.is-open .sidebar {
-    left: 0;
-  }
-  
-  .menu-list {
-    list-style-type: none;
-    padding: 20px 0;
-    margin: 0;
-  }
-  
-  .menu-item {
-    padding: 10px 20px;
-    color: white;
-    font-size: 18px;
-  }
-  
-  .menu-item a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-  }
-  
-  .menu-item i {
-    margin-right: 15px;
-  }
-  
+/* Настройка внешнего вида ползунка (опционально) */
+.sidebar-container::-webkit-scrollbar {
+    width: 1px;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
 </style>
-  

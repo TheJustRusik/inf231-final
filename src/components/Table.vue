@@ -2,7 +2,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th v-for="(header, index) in headers" :key="index">
+          <th v-for="(header, index) in headers" :key="index" class="text-[#5d596c] font-semibold">
             {{ header }}
           </th>
         </tr>
@@ -32,16 +32,4 @@
   };
 </script>
   
-<style>
-  .table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .table th, .table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-</style>
   

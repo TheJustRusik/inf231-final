@@ -6,13 +6,16 @@
                 type: String,
                 required: true,
                 default: "text"
+            },
+            placeholder: {
+                type: String
             }
         },
 
         setup(props, {signals}) {
             props = reactive(props)
             return {
-                type: props.type
+                type: props.type,
             };
         }
     }   
@@ -21,7 +24,7 @@
 <template>
     <div class="flex">
         <div class="">
-            <input :type="type" class="border-blue-300 border-2 rounded-xl"> 
+            <input :placeholder="placeholder" :type="type" class="border-gray-300 border p-2 rounded-lg"> 
         </div>
     </div>
     

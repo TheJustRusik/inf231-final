@@ -1,55 +1,22 @@
 <template>
-    <div class="search-bar">
-      <input 
-        type="text" 
-        v-model="searchQuery" 
-        @keyup.enter="submitSearch" 
-        placeholder="Введите запрос..."
-      />
-      <button @click="submitSearch">Поиск</button>
+    <div class="fixed bg-white rounded-lg shadow-md w-[73%]">
+      <div class="flex justify-between px-8 py-3 items-center">
+        <div class="flex items-center">
+          <i class="fa-solid fa-magnifying-glass text-2xl text-gray-600 mr-4"></i>
+          <p class=" text-gray-400 ">Search (Ctrl+/)</p>
+        </div>
+        <div class="flex items-center">
+          <i class="fa-solid fa-language text-2xl text-gray-600 mr-4"></i>
+          <i class="fa-solid fa-sun text-2xl text-gray-600  mr-4"></i>
+          <i class="fa-solid fa-grip text-2xl text-gray-600 mr-4 "></i>
+          <i class="fa-solid fa-bell text-2xl text-gray-600 mr-4 "></i>
+          <img src="../assets/images/avatar.png" alt="" class="w-[38px] rounded-full">
+        </div>
+      </div>
     </div>
 </template>
   
 <script>
-  export default {
-    data() {
-      return {
-        searchQuery: ''
-      };
-    },
-    methods: {
-      submitSearch() {
-        this.$emit('onSearch', this.searchQuery);
-      }
-    }
-  };
+  
 </script>
-  
-<style>
-  .search-bar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-bar input {
-    padding: 8px;
-    margin-right: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex-grow: 1;
-  }
-  
-  .search-bar button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .search-bar button:hover {
-    background-color: #0056b3;
-  }
-</style>
   

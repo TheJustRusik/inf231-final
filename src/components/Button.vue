@@ -1,6 +1,13 @@
 <template>
-    <div class="button-container">
-      <button @click="buttonClicked" class="bg-blue-400 p-2 text-white rounded-lg">{{ buttonText }}</button>
+    <div class="bg-white button-container my-1">
+      <button @click="buttonClicked" class=" collapse-button w-full rounded-lg" :class="{'bg-[#6b60df]':prim}">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <i class="ml-1 text-[#5d596c]"  :class="icon, {'text-white':prim}"></i>
+            <p class="ml-2 text-[#5d596c] font-semibold" :class="{'text-white':prim}">{{ buttonText }}</p>
+          </div>
+        </div>
+        </button>
       <div v-if="isDropdown && options.length" class="dropdown-content">
         <ul>
           <li v-for="(option, index) in options" :key="index" @click="optionClicked(option)">
@@ -14,9 +21,17 @@
 <script>
   export default {
     props: {
+      prim: {
+        type: Boolean,
+        default: false
+      },
       buttonText: {
         type: String,
         required: true
+      },
+      icon: {
+        type: String,
+        default: 'fa-regular fa-circle text-xs'
       },
       isDropdown: {
         type: Boolean,
@@ -43,10 +58,7 @@
 </script>
   
 <style>
-  .button-container {
-    position: relative;
-    display: inline-block;
-  }
+  
   
   .button-container button {
   }
