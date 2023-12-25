@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed bg-white rounded-lg shadow-md w-[73%]">
+    <div class="fixed bg-white rounded-lg shadow-md w-[73%]" style="z-index: 999;">
       <div class="flex justify-between px-8 py-3 items-center">
         <div class="flex items-center">
           <i class="fa-solid fa-magnifying-glass text-2xl text-gray-600 mr-4"></i>

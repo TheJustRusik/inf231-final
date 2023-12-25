@@ -1,6 +1,9 @@
 <template>
     <div class="progress-bar-container">
-      <div class="progress-bar" :style="{ width: progress + '%' }"></div>
+
+      <div v-if="progress > 70" class="progress-bar bg-red-500" :style="{ width: progress + '%' }"></div>
+      <div v-else-if="progress > 40" class="progress-bar bg-sky-500" :style="{ width: progress + '%' }"></div>
+      <div v-else class="progress-bar bg-purple-500" :style="{ width: progress + '%' }"></div>
     </div>
 </template>
   
@@ -11,7 +14,8 @@
         type: Number,
         required: true,
         validator: (value) => value >= 0 && value <= 100
-      }
+      },
+      
     }
   };
 </script>
@@ -25,8 +29,7 @@
   }
   
   .progress-bar {
-    height: 20px;
-    background-color: #4caf50;
+    height: 5px;
     transition: width 0.3s ease;
   }
 </style>

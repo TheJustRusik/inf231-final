@@ -12,7 +12,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="user in users" :key="user.email" :class="{'bg-gray-100': user.status === 'Inactive', 'bg-white': user.status !== 'Inactive'}">
+        <tr v-for="user in users"  :class="{'bg-gray-100': user.status === 'Inactive', 'bg-white': user.status !== 'Inactive'}">
           <td class="border px-4 py-2">{{ user.name }}</td>
           <td class="border px-4 py-2">{{ user.role }}</td>
           <td class="border px-4 py-2">{{ user.plan }}</td>
@@ -33,6 +33,13 @@ export default {
       users: [
         // Add your users here
         { name: 'Zsazsa McCleverly', role: 'Maintainer', plan: 'Enterprise', billing: 'Auto Debit', status: 'Active' },
+        { name: 'Zsazsa Pisou', role: 'Maintainer', plan: 'Enterprise', billing: 'Auto Debit', status: 'Inactive' },
+        { name: 'Zsazsa McCleverly', role: 'Maintainer', plan: 'Enterprise', billing: 'Auto Debit', status: 'Active' },
+        { name: 'Zsazsa McCleverly', role: 'Maintainer', plan: 'Enterprise', billing: 'Auto Debit', status: 'Active' },
+        { name: 'Zsazsa McCleverly', role: 'Maintainer', plan: 'Enterprise', billing: 'Auto Debit', status: 'Inactive' },
+        { name: 'Zsazsa $uso', role: 'Maintainer', plan: 'Enterprise', billing: 'Auto Debit', status: 'Inactive' },
+        { name: 'Zsazsa McCleverly', role: 'Maintainer', plan: 'Enterprise', billing: 'Auto Debit', status: 'Active' },
+        { name: 'Zsazsa Zuzuu', role: 'Maintainer', plan: 'Enterprise', billing: 'Auto Debit', status: 'Active' },
         // ... other users
       ],
     };
